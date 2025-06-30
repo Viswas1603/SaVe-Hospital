@@ -1,0 +1,130 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #004c6d;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Section Styling */
+section {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 span {
+  color: #007b8f;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #004c6d;
+}
+
+section h3 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  color: #006773;
+}
+
+/* Flex Layouts */
+.sinusitis-section,
+.hearing-loss-section,
+.tonsillitis-section,
+.ent-excellence-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.sinusitis-content,
+.hearing-loss-content,
+.tonsillitis-content,
+.ent-excellence-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.sinusitis-image,
+.hearing-loss-image,
+.tonsillitis-image,
+.ent-excellence-image {
+  flex: 1;
+  text-align: center;
+}
+
+.sinusitis-image img,
+.hearing-loss-image img,
+.tonsillitis-image img,
+.ent-excellence-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.appointment-btn,
+.back-home-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #007b8f;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.back-home-btn {
+  background-color: #495057;
+  margin-left: 1rem;
+}
+
+.appointment-btn:hover,
+.back-home-btn:hover {
+  background-color: #005a6e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sinusitis-section,
+  .hearing-loss-section,
+  .tonsillitis-section,
+  .ent-excellence-section {
+    flex-direction: column;
+  }
+
+  .appointment-btn,
+  .back-home-btn {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
