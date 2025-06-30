@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - SaVe Hospital</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Save Hospital.png" alt="SaVe Hospital Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Blog Section -->
+    <section class="blog-container">
+  <h2 class="section-title">Popular <span>Posts</span></h2>
+
+  <div class="blog-grid">
+    <div class="blog-card">
+      <img src="Ent.jpg" alt="ENT" />
+      <h3>The Best ENT Surgeon in Machilipatnam: Our Expert Recommendations</h3>
+      <p>Finding the best ENT Surgeon in Machilipatnam is crucial for optimal ENT health...</p>
+
+      <div class="read-more-content">
+        <p>
+          At SaVe Hospital, our ENT department is equipped with advanced diagnostic tools and
+          surgical expertise. From sinus treatments and endoscopic surgeries to hearing loss
+          management, we offer compassionate, cutting-edge care to all our patients.
+        </p>
+      </div>
+
+      <a href="javascript:void(0);" class="read-more-toggle">Read More >></a>
+    </div>
+
+    <div class="blog-card">
+      <img src="Ortho.png" alt="Orthopedics" />
+      <h3>Orthopedic Care: Expert Bone & Joint Treatment</h3>
+      <p>Musculoskeletal issues are prevalent today. Expert orthopedic doctors can help...</p>
+
+      <div class="read-more-content">
+        <p>
+          At SaVe Hospital, our orthopedic specialists offer advanced treatment for joint pain,
+          fractures, and spinal problems. Whether it's minimally invasive surgery, physiotherapy,
+          or sports injury care, we ensure a quick and safe recovery.
+        </p>
+      </div>
+
+      <a href="javascript:void(0);" class="read-more-toggle">Read More >></a>
+    </div>
+
+    <div class="blog-card">
+      <img src="Ophthol.jpeg" alt="Ophthalmology" />
+      <h3>Promoting Awareness and Education about Ophthal Issues</h3>
+      <p>We are committed to promoting awareness about Ophthal health...</p>
+
+      <div class="read-more-content">
+        <p>
+          Our Ophthalmology department at SaVe Hospital offers comprehensive eye care services,
+          including routine eye exams, advanced cataract surgery, glaucoma management, and treatment
+          of retinal disorders. We focus on patient education and preventive care to ensure long-term vision health.
+        </p>
+      </div>
+
+      <a href="javascript:void(0);" class="read-more-toggle">Read More >></a>
+    </div>
+  </div>
+</section>
+            <!-- Footer Section -->
+            <footer class="footer">
+                <div class="footer-container">
+                    <!-- Left: Logo and About -->
+                    <div class="footer-about">
+                        <img src="Save Hospital.png" alt="SaVe Hospital Logo" class="footer-logo">
+                        <p>We dedicate and strengthen our services to society by transforming our humble efforts from education to healthcare.</p>
+                        <p>📧 <a href="mailto:savehospitalcentre@gmail.com">savehospitalcentre@gmail.com</a></p>
+                    </div>
+        
+                    <!-- Middle: Quick Links -->
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Health Packages</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Right: Contact Info -->
+                    <div class="footer-contact">
+                        <h3>Machilipatnam</h3>
+                        <p>📍 Jilla Court Centre, MAchilipatnam, Krishna District. INDIA.</p>
+                        <p>📞 <a href="tel:9988776655">9988776655</a></p>
+                        <p>📞 <a href="tel:9988776655">9988776655</a></p>
+                    </div>
+        
+                    <!-- Google Map -->
+                    <div class="footer-map">
+                        <h3>Reach Us</h3>
+                        <iframe 
+                            src="https://maps.app.goo.gl/UnNKdxhZYDACks4q8" 
+                            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </footer>
+            <script>
+  document.querySelectorAll('.read-more-toggle').forEach(function(toggle) {
+    toggle.addEventListener('click', function () {
+      const content = this.previousElementSibling;
+      content.classList.toggle('open');
+      this.textContent = content.classList.contains('open') ? 'Read Less <<' : 'Read More >>';
+    });
+  });
+</script>
+        
