@@ -16,7 +16,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Serve public website (main site)
-app.use(express.static(path.join(__dirname, "../public-website")));
+app.use(express.static(path.join(__dirname, "./public-website")));
 
 // Serve admin portal (separate login page)
 app.use("/admin-portal", express.static(path.join(__dirname, "../admin-portal")));
@@ -27,7 +27,7 @@ app.use("/api/appointments", appointmentRoutes);
 // API route to GET all appointments (for admin dashboard)
 app.get("/api/appointments", async (req, res) => {
   try {
-    const db = await connectDB();
+    const db = await connectDB( );
     const appointments = db.collection("appointments");
 
     const allAppointments = await appointments.find({}).toArray();
@@ -40,7 +40,7 @@ app.get("/api/appointments", async (req, res) => {
 
 // Fallback for 404 in public website
 app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "../public-website/404.html"));
+  res.status(404).sendFile(path.join(__dirname, "./public-website/404.html"));
 });
 
 // Start server
