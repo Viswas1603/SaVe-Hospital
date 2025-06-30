@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.contact-header {
+  background: linear-gradient(to right, #004e92, #000428);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-header h1 span {
+  color: #ff4f4f;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.contact-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #004e92;
+}
+
+.contact-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-card li {
+  margin-bottom: 0.6rem;
+}
+
+.contact-card a {
+  color: #ff4f4f;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.map-section {
+  margin: 2rem 0;
+}
+
+.footer {
+  background-color: #0a0a0a;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
